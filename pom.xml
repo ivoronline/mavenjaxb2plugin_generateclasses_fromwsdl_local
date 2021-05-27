@@ -29,26 +29,26 @@
 
       <plugin>
 
-          <groupId>org.jvnet.jaxb2.maven2</groupId>
-          <artifactId>maven-jaxb2-plugin</artifactId>
-          <version>0.14.0</version>
+        <groupId>org.jvnet.jaxb2.maven2</groupId>
+        <artifactId>maven-jaxb2-plugin</artifactId>
+        <version>0.14.0</version>
 
-          <executions>
-            <execution>
-              <goals>
-                <goal>generate</goal>
-              </goals>
-            </execution>
-          </executions>
+        <executions>
+          <execution>
+            <goals>
+              <goal>generate</goal>
+            </goals>
+          </execution>
+        </executions>
 
-          <configuration>
-            <schemaDirectory>src/main/resources</schemaDirectory>
-            <schemaIncludes>
-              <include>person.wsdl</include>
-            </schemaIncludes>
-            <generatePackage>com.ivoronline.soap</generatePackage>
-            <strict>true</strict>
-          </configuration>
+        <configuration>
+          <strict>true</strict>
+          <generatePackage>com.ivoronline.soap</generatePackage>
+          <schemaDirectory>src/main/resources</schemaDirectory>
+          <schemaIncludes>
+            <include>person.wsdl</include>
+          </schemaIncludes>
+        </configuration>
 
       </plugin>
 
